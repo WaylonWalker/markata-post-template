@@ -1,0 +1,14 @@
+_min_copier_version: v6.0.0b0
+_jinja_extensions:
+    - cookiecutter.extensions.SlugifyExtension
+_exclude:
+  - README.md
+  - .git
+  - copier.yml
+title:
+  type: str
+slug:
+  type: str
+  default: "{{  title | slugify  }}"
+
+
